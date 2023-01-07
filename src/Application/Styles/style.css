@@ -1,0 +1,43 @@
+* {
+   -fx-primaryColor: #10A19D;
+   -fx-secondaryColor: #243763;
+   -fx-grayColor: #848383;
+}
+
+TextArea {
+    -fx-text-box-border: -fx-grayColor;
+    -fx-focus-color: -fx-primaryColor;
+}
+
+.primary-button {
+    -fx-background-color: -fx-primaryColor;
+    -fx-text-fill: white;
+}
+
+.secondary-button {
+    -fx-background-color: -fx-secondaryColor;
+    -fx-text-fill: white;
+}
+
+.error-label {
+    -fx-text-fill: #FF7000;
+}
+
+.score-circle {
+    -fx-background-radius:50%;
+    -fx-padding:13px 10px;
+    -fx-text-fill:white;
+}
+
+.text-area .scroll-bar:vertical {
+    -fx-pref-width: 1;
+    -fx-opacity: 0;
+}
+.text-area .scroll-bar:horizontal {
+    -fx-pref-height: 1;
+    -fx-opacity: 0;
+}
+
+.scroll-pane:focused {
+    -fx-focus-color: -fx-primaryColor;
+}
