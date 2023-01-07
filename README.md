@@ -3,14 +3,12 @@
 This branch includes some additional methods and files that were helpful during the development process, but may not be relevant or necessary for the final version of the project.
 
 Note that the normal methods (used in the main project) may be edited, and these edits may not be applied to the dev branch. The most up-to-date version of the methods can be found in the [main branch](https://github.com/obada-jaras/Arabic-Plagiarism-Detector-Using-NLP).
-<br>
-<br>
 
+<br>
 
 ---
 --- 
 
-<br>
 <br>
 
 # **Additional Files**
