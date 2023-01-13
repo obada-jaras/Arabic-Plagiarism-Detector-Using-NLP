@@ -49,4 +49,4 @@ Note that the normal methods (used in the main project) may be edited, and these
 
 <br>
 
-> Note that the normal methods (used in the main project) may be edited, and these edits may not be applied to the dev branch. The most up-to-date version of the methods can be found in the main branch.
+> Note that the normal methods (used in the main project) may be edited, and these edits may not be applied to the dev branch. The most up-to-date version of the methods can be found in the [main branch](https://github.com/obada-jaras/Arabic-Plagiarism-Detector-Using-NLP).
