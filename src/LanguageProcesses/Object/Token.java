@@ -1,4 +1,4 @@
-package LanguageProcesses;
+package LanguageProcesses.Object;
 
 public class Token {
     public String text;

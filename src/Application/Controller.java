@@ -1,7 +1,7 @@
 package Application;
 
 import LanguageProcesses.Plagiarism;
-import LanguageProcesses.Token;
+import LanguageProcesses.Object.Token;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -188,14 +188,13 @@ public class Controller {
         float saturation = 1.0f;
         float value = 1.0f;
 
-        Color color = Color.getHSBColor(hue, saturation, value);
-        return color;
+        return Color.getHSBColor(hue, saturation, value);
     }
     private String getHexFromColor(Color color) {
         int rgb = color.getRGB() & 0xffffff;
-        String hex = Integer.toHexString(rgb);
+        StringBuilder hex = new StringBuilder(Integer.toHexString(rgb));
         while (hex.length() < 6) {
-            hex = "0" + hex;
+            hex.insert(0, "0");
         }
         return "#" + hex;
     }
