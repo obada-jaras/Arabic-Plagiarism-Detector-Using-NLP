@@ -3,6 +3,24 @@ This project includes tools for preprocessing corpus and input text, building a 
 
 ![ui](https://user-images.githubusercontent.com/35347949/211175705-c161dbbc-f345-4c92-b7b3-d2aad6b542a9.png)
 
+<br>
+
+---
+
+<br>
+
+## **Table of Contents**
+  - [**Detailed Overview**](#detailed-overview)
+    - [**Part 1: Corpus Cleaning and Text Preprocessing**](#part-1-corpus-cleaning-and-text-preprocessing)
+    - [**Part 2: Building the Language Model**](#part-2-building-the-language-model)
+    - [**Part 3: Plagiarism Detection**](#part-3-plagiarism-detection)
+  - [**Features**](#features)
+  - [**Prerequisites**](#prerequisites)
+  - [**Usage**](#usage)
+
+<br>
+
+---
 
 <br>
 
@@ -27,7 +45,7 @@ To improve the accuracy of the plagiarism detection, the corpus and input text a
 - Replacing Arabic letters to match colloquial usage:
   - replacing ى with ا.
   - replacing ة with ه.
-- Removing non-Arabic characters and Arabic punctuations and numbers.
+- Removing non-Arabic characters, Arabic punctuations, and numbers.
 - Removing stop words (common words that do not contribute to the meaning of a text)[^2] [^3].
 - Removing words with only one letter.
 - Stemming the text to reduce words to their base form.
@@ -60,9 +78,61 @@ The plagiarism detection feature is designed to be self-contained and can be run
 
 To calculate the score, the program takes the average of all the tokens in the input text, with the average being weighted based on the gram of each token. This means that tokens with higher grams (e.g., 4 grams) have a higher weight in the calculation. The resulting score is a measure of the similarity between the input text and the language model, with a higher score indicating a higher likelihood of plagiarism.
 
+<br>
 
+---
 
+<br>
 
+## **Features**
+- The project includes tools for preprocessing corpus and input text, building a language model, and detecting plagiarism using NLP.
+- The program preprocess the input text by removing noise, standardizing the formatting, removing stop words, and stemming the text.
+- The program uses an n-gram model to generate a language model and detect plagiarism in the input text.
+- The program provides a user-friendly JavaFX interface that allows users to check an input text or a file for plagiarism.
+- The program provides a score and visual representation of the results, making it easy for users to identify potential instances of plagiarism.
+- The program highlights suspected stolen words and sentences with a color that indicates the fraud rate.
+- The program is designed to be self-contained and can be run independently of the other parts of the project.
+
+<br>
+
+---
+
+<br>
+
+## **Prerequisites**
+In order to run this project, you will need the following:
+
+- [Java 8 or later](https://www.java.com/en/download/).
+- [JavaFX SDK 19 or later](https://openjfx.io/).
+- [Python 3](https://www.python.org/downloads/).
+- [NLTK package](https://pypi.org/project/nltk/).
+- An IDE of your choice (e.g., [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows)).
+
+<br>
+
+---
+
+<br>
+
+## **Usage**
+1. Clone or download the repository to your local machine.
+2. Ensure that you have all the [prerequisites](#prerequisites) installed.
+3. Open the project in your preferred IDE (e.g., [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows)).
+4. Add the vm options to your IDE for JavaFX. Refer to [these instructions](https://openjfx.io/openjfx-docs/#IDE-Intellij) for detailed instructions on how to do this.
+5. If you want to use your own corpus:
+   - Update the `MessyCorpus.txt` file in `Data` folder with your own corpus.
+   - Run the `Corpus.java` class in the `src/LanguageProcesses` package to clean and pre-process the text.
+   - Run the `Stemmer.py` script in the `src/Utils/PythonScripts` package to stem the clean text.
+   - Run the `LanguageModel.java` class in the `src/LanguageProcesses` to create the language model that is used in the Main class.
+6. Run the `Main` class in the `src/Application` package to launch the program.
+
+<br>
+
+---
+
+<br>
+
+> Note: Check the ["dev" branch](https://github.com/obada-jaras/Arabic-Plagiarism-Detector-Using-NLP/tree/dev) for additional development files and methods.
 
 
 [^1]: https://en.wikipedia.org/wiki/Kashida
