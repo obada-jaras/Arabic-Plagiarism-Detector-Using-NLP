@@ -1,8 +1,8 @@
-package LanguageProcesses;
+package LanguageProcesses.Object;
 
 public class Chunk {
-    String text;
-    int numberOfWords;
+    public String text;
+    public int numberOfWords;
 
     public Chunk(String chunk, int numberOfWords) {
         this.text = chunk;
